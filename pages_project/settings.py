@@ -26,7 +26,7 @@ SECRET_KEY = 'z!#!^k51-jpj&zaw#qvfx(%y%cq9vj$ax(jy^vtleklwf+h%og'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'williamfirstproject.onrender.com']
+ALLOWED_HOSTS = ['williamfirstproject.onrender.com']
 
 
 
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
